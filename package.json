@@ -1,0 +1,19 @@
+{
+  "name": "fbivan",
+  "version": "260526b1",
+  "private": true,
+  "description": "Browser-side Facebook Reels and Feed auto scroll bookmarklet.",
+  "scripts": {
+    "check": "node --check fbivan-og-packager.js && node --check fbivan-autoscroll.js && node --check fbivan-loader.js",
+    "build": "node fbivan-og-packager.js --base-url=https://fbivan.pages.dev/fbivan",
+    "deploy": "npx wrangler pages deploy ./dist --project-name=fbivan --branch=main --commit-dirty=true"
+  },
+  "keywords": [
+    "facebook",
+    "bookmarklet",
+    "yellow-web"
+  ],
+  "author": "Yellow Web",
+  "license": "UNLICENSED",
+  "devDependencies": {}
+}

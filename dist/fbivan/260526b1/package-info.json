@@ -1,0 +1,28 @@
+{
+  "app": "FBIvan",
+  "build": "260526b1",
+  "version": "260526b1",
+  "generatedAt": "2026-05-26T09:35:28.767Z",
+  "payload": {
+    "encoding": "base64",
+    "sha256": "6404a64c5c7285fc1796947127d8359c80b7cbff09eeb9cb95ae349be36415fa",
+    "byteLength": 61273
+  },
+  "chunks": [
+    {
+      "index": 1,
+      "file": "og/chunk-001.html",
+      "url": "https://fbivan.pages.dev/fbivan/260526b1/og/chunk-001.html",
+      "latestUrl": "https://fbivan.pages.dev/fbivan/latest/og/chunk-001.html",
+      "ogObjectId": "",
+      "base64Length": 81700,
+      "base64Sha256": "dd9775ca08565263e9c6203a4ae65814a83c26da6de98f4e7b86b05c37c90b5c"
+    }
+  ],
+  "source": "fbivan-autoscroll.js",
+  "chunkSize": 350000,
+  "payloadFile": "payload.js",
+  "manifestFile": "manifest.html",
+  "manifestUrl": "https://fbivan.pages.dev/fbivan/260526b1/manifest.html",
+  "latestManifestUrl": "https://fbivan.pages.dev/fbivan/latest/manifest.html"
+}
