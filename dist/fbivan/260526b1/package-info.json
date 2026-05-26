@@ -1,11 +1,11 @@
 {
-  "app": "FBIvan",
+  "app": "FBAutoScroll",
   "build": "260526b1",
   "version": "260526b1",
-  "generatedAt": "2026-05-26T09:35:28.767Z",
+  "generatedAt": "2026-05-26T09:43:46.524Z",
   "payload": {
     "encoding": "base64",
-    "sha256": "6404a64c5c7285fc1796947127d8359c80b7cbff09eeb9cb95ae349be36415fa",
+    "sha256": "4ab5254d6deac767c5a80b4001bda5e02887ac95a75c90d9b86f0b7a4283da7d",
     "byteLength": 61273
   },
   "chunks": [
@@ -16,7 +16,7 @@
       "latestUrl": "https://fbivan.pages.dev/fbivan/latest/og/chunk-001.html",
       "ogObjectId": "",
       "base64Length": 81700,
-      "base64Sha256": "dd9775ca08565263e9c6203a4ae65814a83c26da6de98f4e7b86b05c37c90b5c"
+      "base64Sha256": "aa4e20788c4a28d67e1225316a13f0b95ec197edf82921e4b54354aca8bbe8e1"
     }
   ],
   "source": "fbivan-autoscroll.js",

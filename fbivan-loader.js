@@ -2,14 +2,14 @@
   "use strict";
 
   const loaderConfig = Object.assign({
-    app: "FBIvan",
+    app: "FBAutoScroll",
     manifestUrl: "https://fbivan.pages.dev/fbivan/latest/manifest.html",
     embeddedBuild: "",
     embeddedPayloadBase64: "",
     cacheKey: "fbivan.loader.cache.v1",
     timeoutMs: 45000,
   }, config || {});
-  const guardKey = "__FBIvanLoader";
+  const guardKey = "__FBAutoScrollLoader";
   const host = String(location.hostname || "");
 
   if (!/(^|\.)facebook\.com$/i.test(host)) {
@@ -217,7 +217,7 @@
       "(function(){\n\"use strict\";\n",
       source,
       "\n}).call(window);",
-      `\n//# sourceURL=fbivan://${build}/payload.js`,
+      `\n//# sourceURL=fbautoscroll://${build}/payload.js`,
     ], { type: "application/javascript;charset=utf-8" });
     const blobUrl = URL.createObjectURL(blob);
     const script = document.createElement("script");

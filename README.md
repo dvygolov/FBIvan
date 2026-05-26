@@ -1,6 +1,8 @@
-# FB Ivan Auto Scroll
+# FB Auto Scroll
 
 Browser-side Yellow Web bookmarklet for Facebook Reels and Feed auto scroll.
+
+Original script by `fb_ivan`.
 
 Landing page:
 

@@ -69,7 +69,7 @@ function pruneOldBuildDirs(outRoot, currentBuild) {
 
 function buildAppMarkSvg() {
   return [
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="FBIvan mark">',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="FB Auto Scroll mark">',
     '  <rect x="5" y="5" width="86" height="86" rx="20" fill="#111" stroke="#ffd000" stroke-width="6"/>',
     '  <path d="M27 28h42v11H41v10h23v10H41v21H27Z" fill="#ffd000"/>',
     '  <circle cx="70" cy="70" r="8" fill="#f4a261"/>',
@@ -160,6 +160,8 @@ function buildLandingHtml({ displayName, build, bookmarklet, manifestUrl, source
     "    h1 { margin:0 0 12px; color:var(--gold); font:900 40px/1.08 Trebuchet MS,Verdana,sans-serif; }",
     "    p { margin:0 0 16px; color:#d8cfaa; }",
     "    .eyebrow { color:var(--muted); font-weight:700; margin-bottom:10px; }",
+    "    .credit { color:var(--muted); font-size:13px; margin-top:6px; }",
+    "    .credit b { color:var(--gold); }",
     "    .bookmarklet { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:0 18px; border-radius:999px; background:var(--gold); color:#111; font-weight:900; box-shadow:0 4px 0 #8a7100; }",
     "    button { min-height:40px; border:1px solid var(--line); border-radius:999px; background:rgba(255,208,0,.08); color:var(--gold); font-weight:800; cursor:pointer; padding:0 14px; }",
     "    .actions { display:flex; gap:10px; flex-wrap:wrap; margin:14px 0; }",
@@ -174,7 +176,7 @@ function buildLandingHtml({ displayName, build, bookmarklet, manifestUrl, source
     "<body>",
     "  <main>",
     "    <nav>",
-    `      <div><div class="brand"><span>${inlineMark}</span><span>${escapeHtml(displayName)}</span></div><div class="eyebrow">Yellow Web bookmarklet build ${escapeHtml(build)}</div></div>`,
+    `      <div><div class="brand"><span>${inlineMark}</span><span>${escapeHtml(displayName)}</span></div><div class="eyebrow">Yellow Web bookmarklet build ${escapeHtml(build)}</div><div class="credit">original script by <b>fb_ivan</b></div></div>`,
     `      <div class="links"><a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener">GitHub source</a><a href="https://yellowweb.top" target="_blank" rel="noopener">yellowweb.top</a><a href="https://t.me/yellow_web" target="_blank" rel="noopener">Telegram</a></div>`,
     "    </nav>",
     "    <section class=\"hero\">",
@@ -182,7 +184,7 @@ function buildLandingHtml({ displayName, build, bookmarklet, manifestUrl, source
     "        <div class=\"eyebrow\">Reels + Feed + Both</div>",
     "        <h1>Auto scroll panel for Facebook Reels and Feed.</h1>",
     "        <p>Drag the yellow bookmarklet to the bookmarks bar. Open Facebook Reels or Feed, click the bookmark, then use the on-page panel to start, stop, switch mode, set breaks, session limit, and scroll limit.</p>",
-    `        <a class="bookmarklet" id="bookmarkletLink" href="${escapeHtml(bookmarklet)}">FB Ivan</a>`,
+    `        <a class="bookmarklet" id="bookmarkletLink" href="${escapeHtml(bookmarklet)}">FB Auto Scroll</a>`,
     "        <div class=\"actions\"><button id=\"copyBookmarklet\" type=\"button\" data-bookmarklet=\"\">Copy bookmarklet</button><button id=\"copyUrl\" type=\"button\">Copy page URL</button></div>",
     `        <code>manifest URL: ${escapeHtml(manifestUrl)}</code>`,
     "      </div>",
@@ -193,7 +195,7 @@ function buildLandingHtml({ displayName, build, bookmarklet, manifestUrl, source
     "        <div><b>Source</b>The payload is published as a normal GitHub repository and versioned Cloudflare Pages build.</div>",
     "      </div>",
     "    </section>",
-    "    <footer>The tool runs only inside your current Facebook tab. It does not send data to a Yellow Web server.</footer>",
+    "    <footer>Original script by <b>fb_ivan</b>. The tool runs only inside your current Facebook tab. It does not send data to a Yellow Web server.</footer>",
     "  </main>",
     "  <script>",
     `    var bookmarkletValue = ${JSON.stringify(bookmarklet)};`,
@@ -215,8 +217,8 @@ function main() {
   const outRoot = path.resolve(readArg("out", OUT_ROOT));
   const distRoot = path.dirname(outRoot);
   const baseUrl = readArg("base-url", "");
-  const appName = readArg("app", "FBIvan");
-  const displayName = "FB Ivan Auto Scroll";
+  const appName = readArg("app", "FBAutoScroll");
+  const displayName = "FB Auto Scroll";
   const sourceUrl = readArg("source-url", "https://github.com/dvygolov/FBIvan");
   const chunkOgObjectIds = parseListArg("chunk-og-object-ids");
   const source = fs.readFileSync(sourcePath, "utf8");

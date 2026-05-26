@@ -1,4 +1,4 @@
-# FBIvan Agent Notes
+# FB Auto Scroll Agent Notes
 
 ## Architecture Rules
 
