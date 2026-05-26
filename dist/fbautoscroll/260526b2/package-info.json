@@ -1,0 +1,28 @@
+{
+  "app": "FBAutoScroll",
+  "build": "260526b2",
+  "version": "260526b2",
+  "generatedAt": "2026-05-26T10:01:56.184Z",
+  "payload": {
+    "encoding": "base64",
+    "sha256": "ad9cc05f7a9620cc2cadbf64a6de3b9288c79765344b08973bb3b17c167d3ec1",
+    "byteLength": 61273
+  },
+  "chunks": [
+    {
+      "index": 1,
+      "file": "og/chunk-001.html",
+      "url": "https://fbautoscroll.pages.dev/fbautoscroll/260526b2/og/chunk-001.html",
+      "latestUrl": "https://fbautoscroll.pages.dev/fbautoscroll/latest/og/chunk-001.html",
+      "ogObjectId": "",
+      "base64Length": 81700,
+      "base64Sha256": "8df2f2af1fb60acd3549a90be188e756dfbe11d0f50242e8ea48bb90a6b1443a"
+    }
+  ],
+  "source": "fbivan-autoscroll.js",
+  "chunkSize": 350000,
+  "payloadFile": "payload.js",
+  "manifestFile": "manifest.html",
+  "manifestUrl": "https://fbautoscroll.pages.dev/fbautoscroll/260526b2/manifest.html",
+  "latestManifestUrl": "https://fbautoscroll.pages.dev/fbautoscroll/latest/manifest.html"
+}

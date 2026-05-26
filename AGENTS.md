@@ -12,8 +12,8 @@
 
 - Bump `FINE_BUILD` in `fbivan-autoscroll.js` and `package.json` for every behavior change.
 - After each production deploy, scrape:
-  - `https://fbivan.pages.dev/fbivan/latest/manifest.html`
-  - every `https://fbivan.pages.dev/fbivan/latest/og/chunk-*.html`
+  - `https://fbautoscroll.pages.dev/fbautoscroll/latest/manifest.html`
+  - every `https://fbautoscroll.pages.dev/fbautoscroll/latest/og/chunk-*.html`
 - Use a real Graph API POST scrape request, not Meta Sharing Debugger in a browser.
 
 ## Hygiene

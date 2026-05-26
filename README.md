@@ -2,11 +2,11 @@
 
 Browser-side Yellow Web bookmarklet for Facebook Reels and Feed auto scroll.
 
-Original script by `fb_ivan`.
+Original script by `fb_ivan`: https://t.me/fb_ivan
 
 Landing page:
 
-https://fbivan.pages.dev/
+https://fbautoscroll.pages.dev/
 
 ## Build
 

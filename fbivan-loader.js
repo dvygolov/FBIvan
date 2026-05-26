@@ -3,10 +3,10 @@
 
   const loaderConfig = Object.assign({
     app: "FBAutoScroll",
-    manifestUrl: "https://fbivan.pages.dev/fbivan/latest/manifest.html",
+    manifestUrl: "https://fbautoscroll.pages.dev/fbautoscroll/latest/manifest.html",
     embeddedBuild: "",
     embeddedPayloadBase64: "",
-    cacheKey: "fbivan.loader.cache.v1",
+    cacheKey: "fbautoscroll.loader.cache.v1",
     timeoutMs: 45000,
   }, config || {});
   const guardKey = "__FBAutoScrollLoader";
