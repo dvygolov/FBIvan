@@ -1,9 +1,11 @@
 {
   "name": "fbautoscroll",
-  "version": "260526b2",
+  "version": "280526b1",
   "private": true,
   "description": "Browser-side Facebook Reels and Feed auto scroll bookmarklet.",
   "scripts": {
+    "bump:build": "node scripts/bump-build-version.cjs",
+    "prebuild": "npm run bump:build",
     "check": "node --check fbivan-og-packager.js && node --check fbivan-autoscroll.js && node --check fbivan-loader.js",
     "build": "node fbivan-og-packager.js --base-url=https://fbautoscroll.pages.dev/fbautoscroll",
     "deploy": "npx wrangler pages deploy ./dist --project-name=fbautoscroll --branch=main --commit-dirty=true"
