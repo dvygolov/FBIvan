@@ -17,6 +17,7 @@
   - `https://fbautoscroll.pages.dev/fbautoscroll/latest/manifest.html`
   - every `https://fbautoscroll.pages.dev/fbautoscroll/latest/og/chunk-*.html`
 - Use a real Graph API POST scrape request, not Meta Sharing Debugger in a browser.
+- Publish `dist/fbautoscroll/latest/package-info.json` and `dist/fbautoscroll/latest/tool-meta.json` for the shared Yellow Web hub.
 
 ## Hygiene
 

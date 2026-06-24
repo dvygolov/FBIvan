@@ -352,14 +352,38 @@ function main() {
     latestManifestUrl: publicUrl("latest/manifest.html"),
   };
   writeFile(path.join(buildDir, "package-info.json"), `${JSON.stringify(packageInfo, null, 2)}\n`);
+  writeFile(path.join(latestDir, "package-info.json"), `${JSON.stringify(packageInfo, null, 2)}\n`);
 
   const loaderManifest = {
     app: appName,
+    build,
     version: build,
+    generatedAt,
+    payload: manifest.payload,
     latestManifestUrl: packageInfo.latestManifestUrl,
+    chunks: manifest.chunks.map((chunk) => ({
+      index: chunk.index,
+      latestUrl: chunk.latestUrl,
+      url: chunk.url,
+      ogObjectId: chunk.ogObjectId,
+    })),
   };
   const loaderSource = buildBookmarkletLoader(loaderManifest, sourceBase64);
   const bookmarklet = `javascript:${encodeURIComponent(loaderSource)}`;
+  const toolMeta = {
+    app: appName,
+    title: displayName,
+    shortName: "FB Scroll",
+    description: "Facebook Reels and Feed auto-scroll panel with modes, breaks, night pause, and session limits.",
+    build,
+    version: build,
+    landingUrl: "https://fbautoscroll.pages.dev/",
+    sourceUrl,
+    bookmarkletHref: bookmarklet,
+    latestManifestUrl: packageInfo.latestManifestUrl,
+    generatedAt,
+  };
+  writeFile(path.join(latestDir, "tool-meta.json"), `${JSON.stringify(toolMeta, null, 2)}\n`);
   writeFile(path.join(distRoot, APP_MARK_FILE), `${buildAppMarkSvg()}\n`);
   writeFile(path.join(distRoot, "index.html"), buildLandingHtml({
     displayName,
