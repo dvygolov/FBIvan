@@ -1,6 +1,6 @@
 {
   "name": "fbautoscroll",
-  "version": "280526b1",
+  "version": "240626b1",
   "private": true,
   "description": "Browser-side Facebook Reels and Feed auto scroll bookmarklet.",
   "scripts": {
