@@ -1,6 +1,6 @@
 // FB Auto Scroll payload.
 // Original script: THIS IS FINE v4.8 by fb_ivan.
-const FINE_BUILD = "240626b1";
+const FINE_BUILD = "240626b2";
 const FINE_UPSTREAM_VERSION = "4.8";
 /* ═══════════════════════════════════════════════════════════
      🐶 THIS IS FINE v4.8 — Reels + Feed + Both
